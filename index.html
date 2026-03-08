@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С 8 Марта! 🌸 Наташа, Нина, Надя</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌷</text></svg>">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader">
+    <div class="loader-flower">🌸</div>
+    <div class="loader-text">Готовим поздравление...</div>
+  </div>
+
+  <!-- PETAL CANVAS -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- CONFETTI CONTAINER -->
+  <div class="confetti-container"></div>
+
+  <!-- NAV DOTS -->
+  <nav class="nav-dots">
+    <div class="nav-dot active" title="Главная"></div>
+    <div class="nav-dot" title="Поздравления"></div>
+    <div class="nav-dot" title="Пожелания"></div>
+    <div class="nav-dot" title="Галерея"></div>
+    <div class="nav-dot" title="Стихи"></div>
+    <div class="nav-dot" title="С любовью"></div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="floating-flowers">
+      <span class="flower-emoji" style="top:10%;left:5%;animation-delay:0s;">🌷</span>
+      <span class="flower-emoji" style="top:20%;left:80%;animation-delay:1s;font-size:2.5rem;">🌹</span>
+      <span class="flower-emoji" style="top:60%;left:15%;animation-delay:2s;font-size:1.8rem;">🌸</span>
+      <span class="flower-emoji" style="top:70%;left:75%;animation-delay:3s;">💐</span>
+      <span class="flower-emoji" style="top:40%;left:90%;animation-delay:1.5s;font-size:1.5rem;">🌺</span>
+      <span class="flower-emoji" style="top:80%;left:50%;animation-delay:2.5s;font-size:2.2rem;">🪻</span>
+      <span class="flower-emoji" style="top:15%;left:45%;animation-delay:0.5s;font-size:1.8rem;">🌼</span>
+      <span class="flower-emoji" style="top:50%;left:30%;animation-delay:3.5s;font-size:2rem;">💮</span>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eight"><span>8</span></div>
+      <div class="hero-march">Марта</div>
+      <div class="hero-subtitle">
+        <span class="typewriter"
+          data-text="Самым дорогим и любимым женщинам — с праздником весны, красоты и нежности! 💕"></span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">⬇️</div>
+  </section>
+
+  <!-- ===== CONGRATULATIONS ===== -->
+  <section id="congratulations">
+    <h2 class="section-title">Поздравляем!</h2>
+    <p class="section-subtitle">Каждой из вас — особенные слова 🌷</p>
+
+    <div class="cards-container">
+
+      <!-- МАМА -->
+      <div class="person-card">
+        <div class="card-avatar mom">
+          <div class="card-avatar-ring"></div>
+          👩‍🦰
+        </div>
+        <div class="card-name">Наташа</div>
+        <div class="card-role">Любимая мамочка 💝</div>
+        <div class="card-poem">
+          Мамочка родная, нежная моя,
+          Ты — мой лучик света, радость бытия!
+          Пусть весна подарит счастье и тепло,
+          Чтобы на душе всегда было светло!
+          Я тебя люблю — сильней всего на свете,
+          Ты дороже всех на целом белом свете! 🌹
+        </div>
+        <div class="card-flowers">🌷🌹🌸💐🌺</div>
+      </div>
+
+      <!-- БАБУШКА -->
+      <div class="person-card">
+        <div class="card-avatar grandma">
+          <div class="card-avatar-ring"></div>
+          👵
+        </div>
+        <div class="card-name">Нина</div>
+        <div class="card-role">Дорогая бабушка 💜</div>
+        <div class="card-poem">
+          Бабулечка родная, мудрая моя,
+          Нежностью своею согреваешь ты меня.
+          Руки золотые, сердце доброты —
+          В мире нет прекрасней, лучше красоты!
+          Здоровья тебе крепкого на долгие года,
+          Чтоб рядом были близкие всегда! 🌸
+        </div>
+        <div class="card-flowers">🪻💜🌼✨🌿</div>
+      </div>
+
+      <!-- СЕСТРА -->
+      <div class="person-card">
+        <div class="card-avatar sister">
+          <div class="card-avatar-ring"></div>
+          👧
+        </div>
+        <div class="card-name">Надя</div>
+        <div class="card-role">Любимая сестрёнка 🧡</div>
+        <div class="card-poem">
+          Сестрёнка дорогая, лучший мой дружок,
+          Ты как весенний солнечный лучок!
+          Пусть мечты сбываются, как в волшебном сне,
+          Улыбка не кончается в чудесной тишине!
+          Будь всегда счастливой, яркой, как цветок,
+          Пусть каждый день приносит радости глоток! 🌻
+        </div>
+        <div class="card-flowers">🌻🧡🌼🦋✨</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== WISHES ===== -->
+  <section class="wishes-section" id="wishes">
+    <h2 class="section-title">Пожелания</h2>
+    <p class="section-subtitle">От всего сердца желаем вам... 💫</p>
+
+    <div class="wishes-grid">
+      <div class="wish-card">
+        <div class="wish-icon">💖</div>
+        <div class="wish-title">Любви</div>
+        <div class="wish-text">Пусть любовь окутывает вас тёплым облаком каждый день, дарит нежность и гармонию в душе!
+        </div>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">🌟</div>
+        <div class="wish-title">Счастья</div>
+        <div class="wish-text">Пусть счастье живёт в каждом мгновении, в каждой улыбке, в каждом новом дне!</div>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">🌿</div>
+        <div class="wish-title">Здоровья</div>
+        <div class="wish-text">Крепкого здоровья на долгие годы! Пусть силы не покидают, а энергия бьёт ключом!</div>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">☀️</div>
+        <div class="wish-title">Тепла</div>
+        <div class="wish-text">Пусть солнце согревает душу, а весна дарит вдохновение и радость каждому дню!</div>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">🦋</div>
+        <div class="wish-title">Красоты</div>
+        <div class="wish-text">Оставайтесь всегда такими прекрасными и неповторимыми, какими вы есть!</div>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">🌈</div>
+        <div class="wish-title">Мечты</div>
+        <div class="wish-text">Пусть все мечты сбываются, а жизнь наполняется яркими красками радуги!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery-section" id="gallery">
+    <h2 class="section-title">Весеннее настроение</h2>
+    <p class="section-subtitle">Цветы для самых любимых 🌸</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        🌷
+        <div class="gallery-label">Тюльпаны для мамы</div>
+      </div>
+      <div class="gallery-item">
+        🌹
+        <div class="gallery-label">Розы с любовью</div>
+      </div>
+      <div class="gallery-item">
+        🌸
+        <div class="gallery-label">Весенняя сакура</div>
+      </div>
+      <div class="gallery-item">
+        💐
+        <div class="gallery-label">Букет счастья</div>
+      </div>
+      <div class="gallery-item">
+        🌺
+        <div class="gallery-label">Тропический цветок</div>
+      </div>
+      <div class="gallery-item">
+        🌻
+        <div class="gallery-label">Солнечный подсолнух</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POEM SECTION ===== -->
+  <section class="poem-section" id="poem">
+    <h2 class="section-title">Стихотворение</h2>
+    <p class="section-subtitle">Посвящается нашим любимым 🌹</p>
+
+    <div class="poem-block">
+      <span class="decorative-flower">🌸</span>
+      <span class="decorative-flower">🌷</span>
+      <span class="decorative-flower">🌹</span>
+      <span class="decorative-flower">🌺</span>
+
+      <div class="poem-text">
+        Восьмое марта — день чудесный,
+        День радости, тепла, весны!
+        Для нас вы — самые прелестные,
+        Прекрасны, нежны и добры.
+
+        Мамуля Наташа — ты наше солнце,
+        Ты даришь свет в любые дни.
+        Когда с тобой — поёт сердечко,
+        Ты — лучшая на всей земли!
+
+        Бабуля Нина — ты наш ангел,
+        Хранишь тепло родного дома.
+        Твоя улыбка — как подарок,
+        Роднее нет и нет весомей.
+
+        Сестрёнка Надя — ты как ветер,
+        Весёлый, лёгкий, озорной!
+        Ты делаешь наш мир светлее,
+        Ты — лучшая на свете, родной!
+
+        С Восьмым марта поздравляем,
+        Любви, улыбок, доброты!
+        Мы очень-очень вас все любим —
+        Вы в нашей жизни — всё и ты! 💕
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HEARTS SECTION ===== -->
+  <section class="hearts-section" id="love">
+    <div class="mini-hearts"></div>
+    <div class="big-heart">💖</div>
+    <div class="hearts-message">Любим вас бесконечно!</div>
+    <p style="margin-top:1rem; color:#b07aab; font-size:0.95rem; position:relative; z-index:2;">
+      Нажмите на сердечко 💕
+    </p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-text">С любовью и нежностью 💕</div>
+    <div class="footer-sub">Наташа, Нина, Надя — вы самые лучшие! С 8 Марта 2025!</div>
+    <div class="footer-hearts">💖 🌹 💜 🌸 🧡 🌷 💕</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
